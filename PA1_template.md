@@ -155,7 +155,7 @@ steps_per_day_withoutNA <- aggregate(activity_substituted$steps,
                                 FUN = "sum")
 hist(steps_per_day_withoutNA$x, col = "blue", 
      breaks = 20,
-     main = "Total number of steps taken each day (filled data)",
+     main = "Total number of steps taken each day (substituted data)",
      xlab = "Number of steps per day",
      ylim = c(0,25))
 
@@ -211,14 +211,6 @@ table(activity_substituted$dayofweek)
 activity_substituted_new<- aggregate(steps ~ interval + dayofweek, activity_substituted, FUN=mean)
 ```
 
-ggplot(activity_substituted_new, aes(interval, steps)) + 
-        geom_line() + 
-        facet_grid(day_type ~ .) +
-        xlab("5-minute intervals") + 
-        ylab("Avarage number of steps taken") +
-        ggtitle("Weekdays and weekends activity patterns")
-
-
 ```{r}
 
 
@@ -226,7 +218,9 @@ ggplot(activity_substituted_new, aes(x=interval, y=steps)) +
   geom_line(color="blue", size=1) + 
   facet_wrap(~dayofweek, nrow=2) +
         facet_grid(dayofweek ~ .) +
-  labs(x="5-minute intervals", y="Avarage number of steps taken")
+  labs(x="5-minute intervals", y="Avarage number of steps taken") +
+        ggtitle("Weekdays and weekends activity")
+
 ```
 
 
