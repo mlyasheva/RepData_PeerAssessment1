@@ -61,7 +61,8 @@ Summary of all steps that were taken daily.
 
 ```{r}
 steps_per_day <- aggregate(steps ~ date, activity, FUN = sum)
-steps_per_day
+head(steps_per_day)
+tail(steps_per_day)
 ```
 
 
@@ -97,7 +98,8 @@ The median total number of steps taken per day was 10765.
 
 ```{r}
 steps_per_day_interval <- aggregate(steps ~ interval, activity, FUN=sum)
-steps_per_day_interval
+head(steps_per_day_interval)
+tail(steps_per_day_interval)
 ```
 
 
