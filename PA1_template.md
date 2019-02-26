@@ -214,13 +214,13 @@ activity_substituted_new<- aggregate(steps ~ interval + dayofweek, activity_subs
 ```{r}
 
 
-weekdays_and_weekends_activity_plot <- ggplot(activity_substituted_new, aes(x=interval, y=steps)) + 
+ggplot(activity_substituted_new, aes(x=interval, y=steps)) + 
   geom_line(color="blue", size=1) + 
   facet_wrap(~dayofweek, nrow=2) +
         facet_grid(dayofweek ~ .) +
   labs(x="5-minute intervals", y="Avarage number of steps taken") +
         ggtitle("Weekdays and weekends activity")
-weekdays_and_weekends_activity_plot
+![Sample panel plot](Weekdays_and_weekends_activity.png)
 ```
 
 
