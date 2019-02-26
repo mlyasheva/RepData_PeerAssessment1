@@ -214,14 +214,15 @@ activity_substituted_new<- aggregate(steps ~ interval + dayofweek, activity_subs
 ```{r}
 
 
-Weekdays_and_weekends_activity_plot <- ggplot(activity_substituted_new, aes(x=interval, y=steps)) + 
+ggplot(activity_substituted_new, aes(x=interval, y=steps)) + 
   geom_line(color="blue", size=1) + 
   facet_wrap(~dayofweek, nrow=2) +
         facet_grid(dayofweek ~ .) +
   labs(x="5-minute intervals", y="Avarage number of steps taken") +
         ggtitle("Weekdays and weekends activity")
 ```
-Weekdays_and_weekends_activity_plot
+
+![Caption for the picture.] (RepData_PeerAssessment1/Weekdays and weekends activity.png)
 
 
 Conclusion: during the day the number of steps on weekends is generally higher than on weekdays, whereas the number of steps in the morning is higher on weekdays than on weekends.
