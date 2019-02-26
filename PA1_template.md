@@ -78,7 +78,7 @@ hist (steps_per_day$steps,
       ylab = "Frequency",
       main = "The Total Number of Steps Taken Each Day")
 ```
-![Caption for the picture.](/path/to/total_number_of_steps_taken_each_day.png)
+![The Total Number of Steps Taken Each Day.](total_number_of_steps_taken_each_day.png)
 
 ### Calculate and report the mean and median of the total number of steps taken per day
 
@@ -110,7 +110,7 @@ plot(steps_per_day_interval$interval, steps_per_day_interval$steps,
      ylab = "Average Number of Steps Taken",
      main = "Total Steps vs. 5-Minute Interval")
 ```
-
+![Total Steps vs. 5-Minute Interval.](total_steps_vs_5min_interval.png)
 
 ### Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -160,7 +160,7 @@ hist(steps_per_day_withoutNA$x, col = "blue",
      ylim = c(0,25))
 
 ```
-
+![Total number of steps taken each day (substituted data).](total_number_of steps_taken_each_day_substituted_data.png)
 
 
 ```{r}
