@@ -78,7 +78,7 @@ hist (steps_per_day$steps,
       ylab = "Frequency",
       main = "The Total Number of Steps Taken Each Day")
 ```
-
+![Caption for the picture.](/path/to/total_number_of_steps_taken_each_day.png)
 
 ### Calculate and report the mean and median of the total number of steps taken per day
 
