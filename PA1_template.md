@@ -160,7 +160,8 @@ hist(steps_per_day_withoutNA$x, col = "blue",
      ylim = c(0,25))
 
 ```
-![Total number of steps taken each day (substituted data).](total_number_of steps_taken_each_day_substituted_data.png)
+
+![Total number of steps taken each day (substituted data).](total_number_of_steps_taken_each_day_substituted_data.png)
 
 
 ```{r}
